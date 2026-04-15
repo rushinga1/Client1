@@ -230,7 +230,7 @@ import { Icon } from '@iconify/vue'
 import { useAuthStore } from '../../stores/auth.store'
 
 const authStore = useAuthStore()
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001'
 
 const steps = ['Personal Info', 'Location', 'Category', 'Review']
 const currentStep = ref(0)

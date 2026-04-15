@@ -81,7 +81,7 @@ import { useAuthStore } from '../../stores/auth.store'
 
 const authStore = useAuthStore()
 const clientId = computed(() => authStore.user?.id)
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001'
 
 const worker = ref<any>(null)
 const loadingWorker = ref(true)

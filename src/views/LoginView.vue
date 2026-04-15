@@ -179,7 +179,7 @@ const router = useRouter()
 const authStore = useAuthStore()
 
 // Base URL of the OTP backend
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001'
 
 // State
 const step = ref<'email' | 'otp'>('email')
